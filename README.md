@@ -1,15 +1,14 @@
-# Wallet App
+# Digital Wallet
 
-A simple digital wallet API with Golang, Gin, GORM, and PostgreSQL.
+A Simple Wallet App .
 
 ## Features
-- Withdraw funds
 - Check balance
-- Validations and error handling
+- Withdraw funds
 
 ## Requirements
-- Golang
-- PostgreSQL
+- Golang 1.20
+- PostgreSQL latest
 
 ## Setup Instructions
 
@@ -18,9 +17,9 @@ A simple digital wallet API with Golang, Gin, GORM, and PostgreSQL.
 git clone https://github.com/fdeddys/wallet-app.git
 ```
 
-2. Set up PostgreSQL and create database `wallet_db`.
+2. Set up PostgreSQL and create database `wallet_db`. user `deddy` and password `123456789`
 
-3. Configure `.env` with your database credentials:
+3. Configure `.env.development` with:
 ```
 DB_HOST=localhost
 DB_PORT=5432
@@ -36,10 +35,10 @@ go mod tidy
 
 5. Run the application:
 ```
-go run main.go
+start.sh
 ```
 
-6. Test API:
+6. Test in POSTMAN
 
 
 -  balance
@@ -55,6 +54,6 @@ curl --location 'http://localhost:8080/api/withdraw' \
 --header 'Cookie: JSESSIONID=4205F2AB221DD365EFD75D1C508D232F' \
 --data '{
     "id": "1",
-    "amount":100
+    "amount":1000
 }'
 ```
