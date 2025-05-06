@@ -1,0 +1,23 @@
+# Binaries
+*.exe
+*.o
+
+# Test binaries
+*_test
+*_test.exe
+
+# Dependencies
+/vendor/
+
+# Go modules
+go.sum
+
+# IDEs
+.idea/
+*.vscode/
+
+# OS-specific files
+.DS_Store
+
+# Temporary files
+*~
