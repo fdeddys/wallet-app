@@ -15,7 +15,7 @@ A simple digital wallet API with Golang, Gin, GORM, and PostgreSQL.
 
 1. Clone repository:
 ```
-git clone <repo-url>
+git clone https://github.com/fdeddys/wallet-app.git
 ```
 
 2. Set up PostgreSQL and create database `wallet_db`.
